@@ -12,6 +12,7 @@ public class Test {
 	        
 	        for(int i=1; i<=10; i++){
 	        	System.out.println(a + " x " + i + " = " + (a*i));
+	        	System.out.println("hello");
 	        }
 	       
 	 System.out.println("Hello");     
