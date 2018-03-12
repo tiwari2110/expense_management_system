@@ -1,3 +1,4 @@
+import java.io.FileWriter;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -6,17 +7,14 @@ import java.util.regex.Pattern;
 public class Test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		  Scanner scan = new Scanner(System.in);
-	        int a = scan.nextInt();
-	        
-	        for(int i=1; i<=10; i++){
-	        	System.out.println(a + " x " + i + " = " + (a*i));
-	        	System.out.println("hello");
-	        	System.out.println("bskjba");
-	        }
-	       
-	 System.out.println("Hello");     
-	}
+		 try{    
+			 String csvfile = "C:\\Users\\akatiwar.I-FLEX\\Downloads\\Internal Job Posting 15Jun17.xlsx";
+			 String filename = "C:\\Users\\akatiwar.I-FLEX\\Desktop\\MyText.out";
+	           FileWriter fw=new FileWriter(filename,false);    
+	           fw.write(csvfile);    
+	           fw.close();    
+	          }catch(Exception e){System.out.println(e);}    
+	          System.out.println("Success...");    
+	     }    
 
 }
